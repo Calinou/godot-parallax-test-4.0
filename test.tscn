@@ -1,0 +1,163 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://ambientcg/Bricks066_2K_Color.jpg" type="Texture" id=1]
+[ext_resource path="res://ambientcg/Bricks066_2K_Roughness.jpg" type="Texture" id=2]
+[ext_resource path="res://ambientcg/Gravel023_2K_Normal.jpg" type="Texture" id=3]
+[ext_resource path="res://ambientcg/Gravel023_2K_Color.jpg" type="Texture" id=4]
+[ext_resource path="res://ambientcg/Gravel023_2K_AmbientOcclusion.jpg" type="Texture" id=5]
+[ext_resource path="res://ambientcg/Bricks066_2K_AmbientOcclusion.jpg" type="Texture" id=6]
+[ext_resource path="res://ambientcg/Bricks066_2K_Normal.jpg" type="Texture" id=7]
+[ext_resource path="res://ambientcg/Bricks066_2K_Displacement.jpg" type="Texture" id=8]
+[ext_resource path="res://ambientcg/Gravel023_2K_Roughness.jpg" type="Texture" id=9]
+[ext_resource path="res://ambientcg/Gravel023_2K_Displacement.jpg" type="Texture" id=10]
+[ext_resource path="res://ambientcg/Rock041_2K_Normal.jpg" type="Texture" id=11]
+[ext_resource path="res://ambientcg/Rock041_2K_Displacement.jpg" type="Texture" id=12]
+[ext_resource path="res://ambientcg/Rock041_2K_Color.jpg" type="Texture" id=13]
+[ext_resource path="res://ambientcg/Rock041_2K_AmbientOcclusion.jpg" type="Texture" id=14]
+[ext_resource path="res://ambientcg/Rock041_2K_Roughness.jpg" type="Texture" id=15]
+[ext_resource path="res://ambientcg/Tiles093_2K_AmbientOcclusion.jpg" type="Texture" id=16]
+[ext_resource path="res://ambientcg/Tiles093_2K_Normal.jpg" type="Texture" id=17]
+[ext_resource path="res://ambientcg/Tiles093_2K_Color.jpg" type="Texture" id=18]
+[ext_resource path="res://ambientcg/Tiles093_2K_Displacement.jpg" type="Texture" id=19]
+[ext_resource path="res://ambientcg/Tiles093_2K_Roughness.jpg" type="Texture" id=20]
+
+[sub_resource type="ProceduralSky" id=9]
+
+[sub_resource type="Environment" id=3]
+background_mode = 2
+background_sky = SubResource( 9 )
+ambient_light_sky_contribution = 0.5
+tonemap_mode = 2
+tonemap_white = 6.0
+glow_enabled = true
+
+[sub_resource type="CubeMesh" id=4]
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_texture = ExtResource( 1 )
+roughness_texture = ExtResource( 2 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 7 )
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource( 6 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+depth_enabled = true
+depth_scale = 0.05
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 8 )
+uv1_scale = Vector3( 3, 2, 1 )
+
+[sub_resource type="SphereMesh" id=6]
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_texture = ExtResource( 4 )
+roughness_texture = ExtResource( 9 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 3 )
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource( 5 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+depth_enabled = true
+depth_scale = 0.05
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 10 )
+uv1_scale = Vector3( 3, 2, 1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_texture = ExtResource( 13 )
+roughness_texture = ExtResource( 15 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 11 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 14 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+depth_enabled = true
+depth_scale = 0.05
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 12 )
+uv1_scale = Vector3( 3, 2, 1 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_texture = ExtResource( 18 )
+roughness_texture = ExtResource( 20 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 17 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 16 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+depth_enabled = true
+depth_scale = 0.05
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 19 )
+uv1_scale = Vector3( 3, 2, 1 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 4 )
+material/0 = SubResource( 7 )
+
+[node name="MeshInstance" type="MeshInstance" parent="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+mesh = SubResource( 4 )
+material/0 = SubResource( 8 )
+
+[node name="MeshInstance" type="MeshInstance" parent="MeshInstance2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 8 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+mesh = SubResource( 4 )
+material/0 = SubResource( 10 )
+
+[node name="MeshInstance" type="MeshInstance" parent="MeshInstance3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 10 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
+mesh = SubResource( 4 )
+material/0 = SubResource( 11 )
+
+[node name="MeshInstance" type="MeshInstance" parent="MeshInstance4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 11 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.387549, -0.804293, 0.450464, 0, 0.488653, 0.872478, -0.921849, -0.338128, 0.189377, 2.84931, 3.44769, 2.00889 )
+shadow_enabled = true
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.418635, 0.62688, 0.657089, 0, 0.723543, -0.690279, -0.908154, 0.288975, 0.302901, 2.00569, -0.639677, 1.82455 )
