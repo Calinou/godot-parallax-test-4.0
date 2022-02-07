@@ -2,6 +2,7 @@
 
 importer="texture"
 type="StreamTexture2D"
+uid="uid://bc6wbub50xv6c"
 path.s3tc="res://.godot/imported/Rock041_2K_AmbientOcclusion.jpg-b86131e1fa3b8f87b5bf2cad8e6876a6.s3tc.stex"
 path.etc2="res://.godot/imported/Rock041_2K_AmbientOcclusion.jpg-b86131e1fa3b8f87b5bf2cad8e6876a6.etc2.stex"
 metadata={
@@ -33,4 +34,3 @@ process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
 process/size_limit=0
 detect_3d/compress_to=0
-svg/scale=1.0

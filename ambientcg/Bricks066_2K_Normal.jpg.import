@@ -2,6 +2,7 @@
 
 importer="texture"
 type="StreamTexture2D"
+uid="uid://cec4o6atbbcln"
 path.s3tc="res://.godot/imported/Bricks066_2K_Normal.jpg-fec09610debf7f663fc23afbd62935ad.s3tc.stex"
 path.etc2="res://.godot/imported/Bricks066_2K_Normal.jpg-fec09610debf7f663fc23afbd62935ad.etc2.stex"
 metadata={
@@ -33,4 +34,3 @@ process/normal_map_invert_y=true
 process/HDR_as_SRGB=false
 process/size_limit=0
 detect_3d/compress_to=0
-svg/scale=1.0

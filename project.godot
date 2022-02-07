@@ -6,8 +6,16 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
+config/name="Test Parallax"
 run/main_scene="res://test.tscn"
+config/features=PackedStringArray("4.0")
+
+[display]
+
+window/vsync/vsync_mode=0
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"

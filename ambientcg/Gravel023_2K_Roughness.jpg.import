@@ -2,6 +2,7 @@
 
 importer="texture"
 type="StreamTexture2D"
+uid="uid://ddqpgccvb3v8x"
 path.s3tc="res://.godot/imported/Gravel023_2K_Roughness.jpg-bd5041b4c677b131ee275dbeb2ff3f20.s3tc.stex"
 path.etc2="res://.godot/imported/Gravel023_2K_Roughness.jpg-bd5041b4c677b131ee275dbeb2ff3f20.etc2.stex"
 metadata={
@@ -33,4 +34,3 @@ process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
 process/size_limit=0
 detect_3d/compress_to=0
-svg/scale=1.0

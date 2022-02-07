@@ -2,6 +2,7 @@
 
 importer="texture"
 type="StreamTexture2D"
+uid="uid://73nc7ywckqcm"
 path.s3tc="res://.godot/imported/Rock041_2K_Color.jpg-0894166027a5ab6cc72b42dd7cd48af0.s3tc.stex"
 path.etc2="res://.godot/imported/Rock041_2K_Color.jpg-0894166027a5ab6cc72b42dd7cd48af0.etc2.stex"
 metadata={
@@ -33,4 +34,3 @@ process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
 process/size_limit=0
 detect_3d/compress_to=0
-svg/scale=1.0

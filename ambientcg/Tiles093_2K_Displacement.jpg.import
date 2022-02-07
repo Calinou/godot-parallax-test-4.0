@@ -2,6 +2,7 @@
 
 importer="texture"
 type="StreamTexture2D"
+uid="uid://d3r3vos7ngog5"
 path.s3tc="res://.godot/imported/Tiles093_2K_Displacement.jpg-0047b2bed5a59b6cd6fc09de7ac0af0d.s3tc.stex"
 path.etc2="res://.godot/imported/Tiles093_2K_Displacement.jpg-0047b2bed5a59b6cd6fc09de7ac0af0d.etc2.stex"
 metadata={
@@ -33,4 +34,3 @@ process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
 process/size_limit=0
 detect_3d/compress_to=0
-svg/scale=1.0

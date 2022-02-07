@@ -2,6 +2,7 @@
 
 importer="texture"
 type="StreamTexture2D"
+uid="uid://bhfj8kweqvvh8"
 path.s3tc="res://.godot/imported/Gravel023_2K_Displacement.jpg-98d17f97501db04c958a0cf2775cb080.s3tc.stex"
 path.etc2="res://.godot/imported/Gravel023_2K_Displacement.jpg-98d17f97501db04c958a0cf2775cb080.etc2.stex"
 metadata={
@@ -33,4 +34,3 @@ process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
 process/size_limit=0
 detect_3d/compress_to=0
-svg/scale=1.0

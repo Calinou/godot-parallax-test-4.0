@@ -2,6 +2,7 @@
 
 importer="texture"
 type="StreamTexture2D"
+uid="uid://b6mub0t6chu2b"
 path.s3tc="res://.godot/imported/Tiles093_2K_Normal.jpg-b89fe98e9314501ddff590eafcdbc24a.s3tc.stex"
 path.etc2="res://.godot/imported/Tiles093_2K_Normal.jpg-b89fe98e9314501ddff590eafcdbc24a.etc2.stex"
 metadata={
@@ -33,4 +34,3 @@ process/normal_map_invert_y=true
 process/HDR_as_SRGB=false
 process/size_limit=0
 detect_3d/compress_to=0
-svg/scale=1.0

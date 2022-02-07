@@ -2,6 +2,7 @@
 
 importer="texture"
 type="StreamTexture2D"
+uid="uid://mw6cc8kcslj1"
 path.s3tc="res://.godot/imported/Gravel023_2K_AmbientOcclusion.jpg-1204fe945e2676f060ad90b5b8afb52f.s3tc.stex"
 path.etc2="res://.godot/imported/Gravel023_2K_AmbientOcclusion.jpg-1204fe945e2676f060ad90b5b8afb52f.etc2.stex"
 metadata={
@@ -33,4 +34,3 @@ process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
 process/size_limit=0
 detect_3d/compress_to=0
-svg/scale=1.0
